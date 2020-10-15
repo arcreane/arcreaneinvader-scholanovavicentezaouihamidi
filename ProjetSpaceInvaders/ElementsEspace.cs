@@ -9,9 +9,10 @@ namespace ProjetSpaceInvaders
 {
     class ElementsEspace
     {
-        protected int m_ivie;
+       
         protected int x;
         protected int y;
+       
 
         public ElementsEspace()
         {
@@ -20,6 +21,6 @@ namespace ProjetSpaceInvaders
             ElementsEspace m_barriere = new Barriere();
 
         }
-
+        
     }
 }
