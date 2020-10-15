@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace ProjetSpaceInvaders
 {
-    class Heros
+    class Heros : Vaisseau
     {
+        public Heros(){
+            m_ivie = 3;
+        }
+
+
 
     }
 }

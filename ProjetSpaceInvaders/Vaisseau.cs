@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace ProjetSpaceInvaders
 {
-    class Vaisseau
+    class Vaisseau : ElementsEspace
     {
+        public Vaisseau()
+        {
 
+        }
+        
     }
 }

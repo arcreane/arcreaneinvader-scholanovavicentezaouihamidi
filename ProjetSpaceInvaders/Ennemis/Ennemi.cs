@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProjetSpaceInvaders
 {
-    class Ennemi
+    class Ennemi : Vaisseau
     {
-
+        
     }
 }

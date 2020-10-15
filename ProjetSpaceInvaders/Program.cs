@@ -11,6 +11,8 @@ namespace ProjetSpaceInvaders
         static void Main(string[] args)
         {
 
+            ElementsEspace m_i = new ElementsEspace();
+            
 
         }
     }
