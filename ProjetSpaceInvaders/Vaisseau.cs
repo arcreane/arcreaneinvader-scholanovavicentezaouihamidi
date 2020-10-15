@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProjetSpaceInvaders
 {
-    class Program
+    class Vaisseau
     {
-        static void Main(string[] args)
-        {
 
-
-        }
     }
 }

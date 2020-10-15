@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProjetSpaceInvaders
 {
-    class Program
+    class Coordonnees
     {
-        static void Main(string[] args)
-        {
 
-
-        }
     }
 }
