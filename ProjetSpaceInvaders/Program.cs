@@ -8,11 +8,12 @@ namespace ProjetSpaceInvaders
 {
     class Program
     {
+       
         static void Main(string[] args)
         {
+            ElementsEspace NewGame = new ElementsEspace();
 
-            ElementsEspace m_i = new ElementsEspace();
-            
+            Console.ReadLine();
 
         }
     }

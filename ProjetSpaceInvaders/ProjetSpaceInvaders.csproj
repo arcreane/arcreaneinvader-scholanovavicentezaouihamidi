@@ -44,16 +44,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Barriere.cs" />
+    <Compile Include="Charactere.cs" />
     <Compile Include="ElementsEspace.cs" />
     <Compile Include="Ennemis\Boss.cs" />
-    <Compile Include="Ennemis\Ennemi.cs" />
     <Compile Include="Heros.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Ennemis\Pawn.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Projectile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vaisseau.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

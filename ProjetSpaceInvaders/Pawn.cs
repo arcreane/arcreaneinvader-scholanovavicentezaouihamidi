@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace ProjetSpaceInvaders
 {
-    class Pawn : Charactere
+    class Pawn : Ennemi
     {
         public Pawn()
         {
-            m_iVie = 1;
-            Console.WriteLine("Je suis un pawn, j'ai " + m_iVie);
+            m_ivie = 1;
         }
 
+        internal static void ApparaitrePawn(Ennemi p_ivie)
+        {
+            Console.WriteLine("Je suis un pawn, j'ai " + p_ivie);
+        }
     }
 }

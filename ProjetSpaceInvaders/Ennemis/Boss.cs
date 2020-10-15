@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ProjetSpaceInvaders
 {
-    class Boss : Ennemi
+    class Boss : Charactere
     {
         public Boss()
         {
-            m_ivie = 50;
+            m_iVie = 50;
         }
     }
 }

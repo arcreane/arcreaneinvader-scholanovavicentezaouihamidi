@@ -8,6 +8,6 @@ namespace ProjetSpaceInvaders
 {
     class Ennemi : Vaisseau
     {
-        protected int m_ivie;
+        
     }
 }

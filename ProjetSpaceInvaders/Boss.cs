@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace ProjetSpaceInvaders
 {
-    class Vaisseau : ElementsEspace
+    class Boss : Ennemi
     {
-        public Vaisseau()
+        public Boss()
         {
-
+            m_ivie = 50;
         }
-        
     }
 }

@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace ProjetSpaceInvaders
 {
-    class Barriere : Charactere
+    class Charactere
     {
-        public Barriere()
+        protected int m_iVie;
+        protected int x;
+        protected int y;
+        public Charactere()
         {
-            m_iVie = 1;
-            Console.WriteLine("Je suis une barriere, j'ai " + m_iVie);
+                
         }
     }
 }

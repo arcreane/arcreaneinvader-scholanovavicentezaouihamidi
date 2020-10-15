@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace ProjetSpaceInvaders
 {
-    class Heros : Vaisseau
+    class Heros : Charactere
     {
         public Heros(){
-            m_ivie = 3;
+            m_iVie = 3;
+            Console.WriteLine("Je suis le Heros et j'ai " + m_iVie + " point de vie ");
         }
 
 
