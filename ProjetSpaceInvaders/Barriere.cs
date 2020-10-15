@@ -8,10 +8,18 @@ namespace ProjetSpaceInvaders
 {
     class Barriere : Charactere
     {
+        private char m_apparenceBarriere = '*';
         public Barriere()
         {
             m_iVie = 1;
-            Console.WriteLine("Je suis une barriere, j'ai " + m_iVie);
+            Console.SetCursorPosition(30, 10);
+            Console.Write(m_apparenceBarriere);
+            //Console.WriteLine("Je suis une barriere, j'ai " + m_iVie);
+        }
+
+        public override void ActionElement()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetSpaceInvaders
 {
-    class Charactere
+     public abstract class Charactere
     {
         protected int m_iVie;
         protected int x;
@@ -15,5 +15,9 @@ namespace ProjetSpaceInvaders
         {
                 
         }
+
+        public abstract void ActionElement();
+        
+        
     }
 }

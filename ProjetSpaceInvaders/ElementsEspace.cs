@@ -17,8 +17,12 @@ namespace ProjetSpaceInvaders
             Heros m_heros = new Heros();
             Pawn m_pawn = new Pawn();
             Barriere m_barriere = new Barriere();
+            m_heros.ApparaitreHeros();
+            m_heros.ActionElement();
 
         }
+
+
         
     }
 }

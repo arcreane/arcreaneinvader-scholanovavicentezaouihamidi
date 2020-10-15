@@ -12,5 +12,10 @@ namespace ProjetSpaceInvaders
         {
             m_iVie = 50;
         }
+
+        public override void ActionElement()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

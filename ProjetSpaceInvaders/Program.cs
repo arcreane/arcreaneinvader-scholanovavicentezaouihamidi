@@ -11,9 +11,15 @@ namespace ProjetSpaceInvaders
        
         static void Main(string[] args)
         {
+            Console.CursorVisible = false;
             ElementsEspace NewGame = new ElementsEspace();
+            
+           
+
 
             Console.ReadLine();
+           
+
 
         }
     }
