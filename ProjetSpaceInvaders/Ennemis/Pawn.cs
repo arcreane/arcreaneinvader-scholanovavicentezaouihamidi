@@ -10,6 +10,7 @@ namespace ProjetSpaceInvaders
 {
     class Pawn : Charactere
     {
+<<<<<<< HEAD
         private string m_apparencePawn = "*";
         public Pawn(int u,int v)
         {
@@ -59,6 +60,20 @@ namespace ProjetSpaceInvaders
                     x = 0;
                 }
             }
+=======
+        private char m_apparencePawn = '+';
+        public Pawn()
+        {
+            m_iVie = 1;
+            Console.SetCursorPosition(30, 20);
+            Console.Write(m_apparencePawn);
+            //Console.WriteLine("Je suis un pawn, j'ai " + m_iVie);
+        }
+
+        public override void ActionElement()
+        {
+            throw new NotImplementedException();
+>>>>>>> origin/main
         }
     }
 }
