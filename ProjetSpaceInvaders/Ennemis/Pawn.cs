@@ -18,9 +18,9 @@ namespace ProjetSpaceInvaders
             //Console.WriteLine("Je suis un pawn, j'ai " + m_iVie);
         }
 
-        public override void ActionElement()
-        {
-            throw new NotImplementedException();
-        }
+        //public override void ActionElement()
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

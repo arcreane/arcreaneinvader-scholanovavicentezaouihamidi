@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace ProjetSpaceInvaders
 {
-     public abstract class Charactere
+     public abstract class Charactere 
     {
         protected int m_iVie;
-        protected int x;
-        protected int y;
+        public int Posx;
+        public int Posy;
         public Charactere()
         {
                 
         }
 
-        public abstract void ActionElement();
+        //public abstract void ActionElement();
         
         
     }
