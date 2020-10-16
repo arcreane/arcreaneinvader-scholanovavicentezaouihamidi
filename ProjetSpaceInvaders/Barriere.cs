@@ -8,11 +8,7 @@ namespace ProjetSpaceInvaders
 {
     class Barriere : Charactere
     {
-<<<<<<< HEAD
         private char m_apparenceBarriere = 'H';
-=======
-        private char m_apparenceBarriere = '*';
->>>>>>> origin/main
         public Barriere()
         {
             m_iVie = 1;

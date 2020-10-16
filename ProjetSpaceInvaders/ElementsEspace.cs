@@ -9,17 +9,11 @@ namespace ProjetSpaceInvaders
 {
     class ElementsEspace
     {
-<<<<<<< HEAD
-=======
-        
-       
->>>>>>> origin/main
 
         private Pawn[] m_Pawn;
         public ElementsEspace()
         {
             Heros m_heros = new Heros();
-<<<<<<< HEAD
             m_Pawn = new Pawn[Program.NUMBER_PAWN];
             for (int i = 0; i < Program.NUMBER_PAWN; i++)
             {
@@ -30,16 +24,5 @@ namespace ProjetSpaceInvaders
             m_heros.ApparaitreHeros();
             m_heros.ActionElement();
         }
-=======
-            Pawn m_pawn = new Pawn();
-            Barriere m_barriere = new Barriere();
-            m_heros.ApparaitreHeros();
-            m_heros.ActionElement();
-
-        }
-
-
-        
->>>>>>> origin/main
     }
 }
