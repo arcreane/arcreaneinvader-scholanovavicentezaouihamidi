@@ -14,15 +14,19 @@ namespace ProjetSpaceInvaders
         public Projectile(int p_posx, int p_posy)
         {
             Px = p_posx;
-            Py = p_posy;
+            Py = p_posy+1;
         }
 
         public void UpdateProj()
         {
-            Py += 5;
+            Py += 2;
             Console.SetCursorPosition(Px, Py);
             Console.Write(m_apparenceProj);
         }
-
+        public void ClearProj()
+        {
+            Console.SetCursorPosition(Px, Py-1);
+            Console.
+        }
     }
 }

@@ -7,7 +7,7 @@ using System.Timers;
 
 namespace ProjetSpaceInvaders
 {
-    
+
     class Heros : Charactere
     {
         private char m_apparenceHeros = '$';
@@ -21,9 +21,12 @@ namespace ProjetSpaceInvaders
 
         public void ApparaitreHeros()
         {
-            Console.SetCursorPosition(Posx,Posy);
+            Console.SetCursorPosition(Posx, Posy);
             Console.Write(m_apparenceHeros);
         }
-
+        public Projectile Tirer()
+        {
+            return new Projectile(Posx, Posy);
+        }
     }
 }
