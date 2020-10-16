@@ -19,8 +19,9 @@ namespace ProjetSpaceInvaders
             timer.Elapsed += Timer_Elapsed;
             timer.Interval = 250;
             timer.Start();
+
             //Console.WriteLine("Je suis le Heros et j'ai " + m_iVie + " point de vie ");
-            
+
         }
 
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
@@ -53,8 +54,16 @@ namespace ProjetSpaceInvaders
         public override void ActionElement()
         {
 
-            
-                
+        }
+
+        public int GetX()
+        {
+            return x;
+        }
+
+        public int GetY()
+        {
+            return y;
         }
 
 
