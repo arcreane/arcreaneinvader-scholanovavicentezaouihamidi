@@ -19,9 +19,15 @@ namespace ProjetSpaceInvaders
 
         public void UpdateProj()
         {
-            Py += 2;
-            Console.SetCursorPosition(Px, Py);
-            Console.Write(m_apparenceProj);
+           
+            if (Py < 30)
+            {
+                Py += 1;
+                Console.SetCursorPosition(Px, Py);
+                Console.Write(m_apparenceProj);
+            }
+            
+            
         }
         public void ClearProj()
         {

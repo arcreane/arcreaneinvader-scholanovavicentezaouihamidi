@@ -18,7 +18,6 @@ namespace ProjetSpaceInvaders
                 m_Pawn[i].ApparaitrePawn();
             }
             m_heros.ApparaitreHeros();
-            m_heros.ActionElement();
         }
     }
 }
