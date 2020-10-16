@@ -46,14 +46,15 @@ namespace ProjetSpaceInvaders
             Console.WriteLine(" ");
 
 
-            x += 4;
+            x -= 4;
+
             if (x < 0)
             {
                 x = 0;
             }
             else
             {
-                if (x > 110)
+                if (x > 120)
                 {
                     x = 0;
                 }

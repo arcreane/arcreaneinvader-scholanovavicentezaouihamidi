@@ -9,6 +9,8 @@ namespace ProjetSpaceInvaders
 {
     class Program
     {
+        public const int NUMBER_PAWN = 32;
+
         static bool GameOver = false;
         static void Main(string[] args)
         {
