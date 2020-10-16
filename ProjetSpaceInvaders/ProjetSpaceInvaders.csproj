@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Afficheur.cs" />
     <Compile Include="Barriere.cs" />
     <Compile Include="Charactere.cs" />
     <Compile Include="ElementsEspace.cs" />

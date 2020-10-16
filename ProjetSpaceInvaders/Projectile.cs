@@ -26,7 +26,6 @@ namespace ProjetSpaceInvaders
         public void ClearProj()
         {
             Console.SetCursorPosition(Px, Py-1);
-            Console.
         }
     }
 }

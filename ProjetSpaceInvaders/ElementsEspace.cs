@@ -12,9 +12,9 @@ namespace ProjetSpaceInvaders
    public class ElementsEspace
     {
         Heros m_heros = new Heros();
-        Pawn m_pawn = new Pawn();
         Barriere m_barriere = new Barriere();
         List<Projectile> m_ListeBullet = new List<Projectile>();
+        private Pawn[] m_Pawn;
         public ElementsEspace()
         {
             //Timer qui permet de géré les entré du joueur
@@ -31,9 +31,23 @@ namespace ProjetSpaceInvaders
 
             m_heros.ApparaitreHeros();
             //m_heros.ActionElement();
+            m_Pawn = new Pawn[Program.NUMBER_PAWN];
+            for (int i = 0; i < Program.NUMBER_PAWN; i++)
+            {
+                m_Pawn[i] = new Pawn(30 + (20 * (i / 8)), 10 + (i % 8));
+                m_Pawn[i].ApparaitrePawn();
+            }
 
         }
-
+        
+        //public ElementsEspace()
+        //{
+        //    Heros m_heros = new Heros();
+           
+        //    Barriere m_barriere = new Barriere();
+        //    m_heros.ApparaitreHeros();
+        //    m_heros.ActionElement();
+        //}
         private void TimerHero_Elapsed(object sender, ElapsedEventArgs e)
         {
             ConsoleKey touche = Console.ReadKey().Key;
