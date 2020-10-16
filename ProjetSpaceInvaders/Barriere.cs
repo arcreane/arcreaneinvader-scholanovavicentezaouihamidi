@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace ProjetSpaceInvaders
 {
-    class Barriere : ElementsEspace
+    class Barriere : Charactere
     {
+        private char m_apparenceBarriere = 'H';
         public Barriere()
         {
-            m_ivie = 1;
+            m_iVie = 1;
+            Console.SetCursorPosition(30, 10);
+            Console.Write(m_apparenceBarriere);
+            //Console.WriteLine("Je suis une barriere, j'ai " + m_iVie);
         }
 
-        public void ApparaitreBarriere()
+        public override void ActionElement()
         {
-            Console.WriteLine("Je suis une barriere, j'ai " + m_ivie);
+            throw new NotImplementedException();
         }
     }
 }

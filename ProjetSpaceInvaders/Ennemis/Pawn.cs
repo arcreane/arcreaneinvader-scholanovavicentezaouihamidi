@@ -1,21 +1,63 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 
 namespace ProjetSpaceInvaders
 {
-    class Pawn : Ennemi
+    class Pawn : Charactere
     {
-        public Pawn()
+        private string m_apparencePawn = "*";
+        public Pawn(int u,int v)
         {
-            m_ivie = 1;
+            m_iVie = 1;
+            x = u;
+            y = v;
+            Timer timer = new Timer();
+            timer.Elapsed += Timer_Elapsed;
+            timer.Interval = 1500;
+            timer.Start();
         }
 
-        internal static void ApparaitrePawn(Ennemi p_ivie)
+        private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            Console.WriteLine("Je suis un pawn, j'ai " + p_ivie);
+            DeplacerPawn();
+            ApparaitrePawn();
+        }
+
+    public override void ActionElement()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ApparaitrePawn()
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(m_apparencePawn);
+        }
+
+        public void DeplacerPawn()
+        {
+            Console.WriteLine(" ");
+            Console.SetCursorPosition(x, y);
+            Console.WriteLine(" ");
+
+
+            x += 4;
+            if (x < 0)
+            {
+                x = 0;
+            }
+            else
+            {
+                if (x > 110)
+                {
+                    x = 0;
+                }
+            }
         }
     }
 }
